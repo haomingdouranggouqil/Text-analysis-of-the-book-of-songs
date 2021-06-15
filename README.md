@@ -53,9 +53,7 @@ Python是一门易读、易维护，并且被大量用户所欢迎的、用途�
 而后，求出《诗经》的总字数为29667，去除掉重复的字，诗经中有2790个互不相同的字。
 
 为了探究《诗经》中单字的使用频率，我们画了一张单字数量与所占文本比例的关系，如下图：
-
-![character frequency](D:\代桌面\程序\诗经论文\基于《诗经》的文本分析\character frequency.png)
-
+![1](https://github.com/haomingdouranggouqil/Text-analysis-of-the-book-of-songs/blob/main/character%20frequency.png)
 
 
 这张图表示，虽然《诗经》有2790个互不相同的字，但只需要大约500个字便可以表示百分之七十的内容，大约1000个非常用字只占了全部文本的百分之五。
@@ -103,8 +101,7 @@ Python是一门易读、易维护，并且被大量用户所欢迎的、用途�
 
 又基于分词结果绘制出词云，词语大小与词语频率成正相关，如下图：
 　　
-
-![无标题](D:\代桌面\程序\诗经论文\基于《诗经》的文本分析\无标题.png)
+![2](https://github.com/haomingdouranggouqil/Text-analysis-of-the-book-of-songs/blob/main/%E6%97%A0%E6%A0%87%E9%A2%98.png)
 
 <h4 align = "center">六：对比风雅颂差异</h4>
 
@@ -167,7 +164,7 @@ $$
 
 | 风部分篇目情感波动曲线                                       | 雅部分篇目情感波动曲线                                       | 颂部分篇目情感波动曲线                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![feng](D:\代桌面\程序\诗经论文\基于《诗经》的文本分析\feng.png) | ![ya](D:\代桌面\程序\诗经论文\基于《诗经》的文本分析\ya.png) | ![song](D:\代桌面\程序\诗经论文\基于《诗经》的文本分析\song.png) |
+| ![3](https://github.com/haomingdouranggouqil/Text-analysis-of-the-book-of-songs/blob/main/feng.png)| ![4](https://github.com/haomingdouranggouqil/Text-analysis-of-the-book-of-songs/blob/main/ya.png)| ![5](https://github.com/haomingdouranggouqil/Text-analysis-of-the-book-of-songs/blob/main/song.png) |
 
 从这三幅图可以看出：《风》的情感曲线波动较大，极差也较大。而《颂》的波动较小，极差也较小，且整体偏向函数值域的上半部分。
 　　这些结果表明了《风》部分的作品反应了当时人们各种各样，多姿多彩的生活，有求爱诗，有弃妇诗，情感波动较大，而《颂》则显得千篇一律，没有较大的波动，且大多数篇目情感都趋向于正面，得分最低的也在0.45以上，与《颂》的特点非常吻合。
@@ -243,7 +240,8 @@ $$instance(i, j) =\sqrt{\sum_{n = 1}^{length(i)}(i[n] - j[n])^2}$$
 　　K-mean算法适合用来将未标记的多组数据根据距离聚合为不同类别，聚合效果越好，轮廓系数越接近于1。
 
 　　我们已经定义了欧式距离，此刻再从风雅颂中各抽出40篇作品，将其编码为样本点，随后为了方便计算，将每个样本点中前两个特征加入到第三个特征——64元素的数组中，然后将此120个样本点进行K-mean并绘制出轮廓系数的曲线图。
-![Alt text](./轮廓系数.png)
+[6](https://github.com/haomingdouranggouqil/Text-analysis-of-the-book-of-songs/blob/main/%E8%BD%AE%E5%BB%93%E7%B3%BB%E6%95%B0.png)
+
 　　由图中可以看出，聚类效果最好的是六类，分为三类的聚类效果不如分为六类。因此我们可以推断，将《诗经》中作品以六种风格来划分，比用风雅颂三种题材来划分更合适，也就是说，风雅颂之间的差别，比不同风格之间的差别要小。
 
 <h4 align = "center">十：束皙陶渊明仿诗经作品相似度比较</h4>
